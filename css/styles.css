@@ -653,6 +653,7 @@ h1, h2, h3, h4, p {
     padding: 63px 24px;
 
     background-color: rgba(33, 150, 243, 0.9);
+    
     transition: transform var(--animation);
 }
 
