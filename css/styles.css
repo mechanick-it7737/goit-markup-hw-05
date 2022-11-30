@@ -3,6 +3,8 @@
     --sacondary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-text: #ffffff;
+
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -103,6 +105,8 @@ h1, h2, h3, h4, p {
     color: var(--primary-text-color);
 
     text-decoration: none;
+
+    transition: color var(--animation);
 }
 
 .nav-item {
@@ -162,6 +166,8 @@ h1, h2, h3, h4, p {
     color: var(--sacondary-text-color);
 
     text-decoration: none;
+
+    transition: color var(--animation);
 }
 
 
@@ -246,7 +252,7 @@ h1, h2, h3, h4, p {
 
     opacity: 1;
 
-    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: visibility var(--animation), opacity var(--animation);
 }
 
 
@@ -457,6 +463,8 @@ h1, h2, h3, h4, p {
 
     color: #AFB1B8;
     background-color: transparent;
+
+    transition: color var(--animation), background-color var(--animation);
 }
 
 .team-icon {
@@ -501,6 +509,8 @@ h1, h2, h3, h4, p {
 
     color: #AFB1B8;
     background-color: transparent;
+
+    transition: color var(--animation), border var(--animation);
 }
 
 .clients-icon {
@@ -555,6 +565,8 @@ h1, h2, h3, h4, p {
     color: var(--primary-text-color); 
 
     cursor: pointer;
+
+    transition: color var(--animation), background-color var(--animation);
 }
 
 .filter-button-list:hover,
@@ -594,6 +606,8 @@ h1, h2, h3, h4, p {
     display: block;
     
     text-decoration: none;
+
+    transition: box-shadow var(--animation);
 }
 
 .project-list-link:hover,
@@ -639,9 +653,7 @@ h1, h2, h3, h4, p {
     padding: 63px 24px;
 
     background-color: rgba(33, 150, 243, 0.9);
-
-    transition: 1200ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: transform var(--animation);
 }
 
 .project-list-link:hover .project-list-wrape,
@@ -697,6 +709,8 @@ h1, h2, h3, h4, p {
     
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+
+    transition: color var(--animation);
 }
 
 .footer-contact-link:hover,
@@ -747,6 +761,8 @@ h1, h2, h3, h4, p {
 
     color: var(--primary-white-text);
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: color var(--animation), background-color var(--animation);
 }
 
 .footer-icon-link:hover,
