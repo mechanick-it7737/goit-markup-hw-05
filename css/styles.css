@@ -279,6 +279,7 @@ h1, h2, h3, h4, p {
 
 .is-hidden.hero-backdrop .hero-modal {
     transform: translate(-50%, -50%) scale(1.5);
+    
 }
 .modal-button {
     position: absolute;
